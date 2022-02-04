@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">calculatrice</string>
+    <string name="main_num_textbox">nombre</string>
+    <string name="main_calculer_textview">Calculer</string>
+    <string name="main_effacer_textview">Effacer</string>
+    <string name="erreur_message">Une erreur est arriver, nous vous conseillons de recomencer votre calcule</string>
+    <string name="calcul_message">faites un calculs d\'abord</string>
+    <string name="main_hint_weight">Calcul</string>
+</resources>

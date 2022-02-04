@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/main_layout">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="@dimen/main_title_size"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/main_margin_size"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/main_resultat_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:textSize="@dimen/main_result_size"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.IMC.TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_margin_size"
+        android:hint="@string/main_hint_weight">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/main_num_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/main_text_size" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/main_plus_bouton"
+                android:layout_width="@dimen/main_button_weight"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_marginButton_size"
+                android:text="+"
+                android:textSize="@dimen/main_textButton_size"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/main_moins_bouton"
+                android:layout_width="@dimen/main_button_weight"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_marginButton_size"
+                android:text="-"
+                android:textSize="@dimen/main_textButton_size"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/main_diviser_bouton"
+                android:layout_width="@dimen/main_button_weight"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_marginButton_size"
+                android:text="/"
+                android:textSize="@dimen/main_textButton_size"
+                android:layout_weight="1"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/main_fois_bouton"
+                android:layout_width="@dimen/main_button_weight"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_marginButton_size"
+                android:text="*"
+                android:textSize="@dimen/main_textButton_size"
+                android:layout_weight="1"/>
+        </TableRow>
+
+    </TableLayout>
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/main_plus_bouton"
+            android:layout_width="@dimen/main_button_weight"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/main_marginButton_size"
+            android:text="+"
+            android:textSize="@dimen/main_textButton_size" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/main_moins_bouton"
+            android:layout_width="@dimen/main_button_weight"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/main_marginButton_size"
+            android:text="-"
+            android:textSize="@dimen/main_textButton_size" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/main_diviser_bouton"
+            android:layout_width="@dimen/main_button_weight"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/main_marginButton_size"
+            android:text="/"
+            android:textSize="@dimen/main_textButton_size" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/main_fois_bouton"
+            android:layout_width="@dimen/main_button_weight"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/main_marginButton_size"
+            android:text="*"
+            android:textSize="@dimen/main_textButton_size" />
+    </LinearLayout>-->
+
+    <Button
+        style="?android:attr/buttonBarButtonStyle"
+        android:id="@+id/main_calc_bouton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_marginButton_size"
+        android:text="@string/main_calculer_textview"
+        android:textSize="@dimen/main_textButton_size"
+        android:textStyle="bold"/>
+    <Button
+        style="?android:attr/buttonBarButtonStyle"
+        android:id="@+id/main_clear_bouton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_marginButton_size"
+        android:text="@string/main_effacer_textview"
+        android:textSize="@dimen/main_textButton_size"
+        android:textStyle="bold"/>
+</LinearLayout>

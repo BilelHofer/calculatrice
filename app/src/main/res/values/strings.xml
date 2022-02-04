@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">calculator</string>
+    <string name="main_num_textbox">number</string>
+    <string name="main_calculer_textview">Calculate</string>
+    <string name="main_effacer_textview">Clear</string>
+    <string name="erreur_message">An error occurs, we advise you to recompose your calculation</string>
+    <string name="calcul_message">make a calculation first</string>
+    <string name="main_hint_weight">Calcul</string>
+</resources>

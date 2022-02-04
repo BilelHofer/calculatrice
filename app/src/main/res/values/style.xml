@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Style général de l'application -->
+    <style name="Theme.CAL" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="android:colorBackground">@color/hardBlue</item>
+    </style>
+
+    <!-- Style pour les input text -->
+    <style name="Widget.IMC.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/littleWhite</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="hintTextColor">@color/white</item>
+        <item name="hintTextAppearance">@style/TextAppearance.IMC.TextInputLayout.HintText</item>
+        <item name="suffixText">calcul</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+    <!-- Style pour l'input text -->
+    <style name="TextAppearance.IMC.TextInputLayout.HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>
